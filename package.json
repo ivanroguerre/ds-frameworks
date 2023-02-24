@@ -1,0 +1,40 @@
+{
+  "name": "ds-frameworks",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "eslint-config-custom": "*",
+    "prettier": "latest",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "@dscla/ds-avatar": "^1.0.0",
+    "@dscla/ds-banner-portada": "^1.0.4",
+    "@dscla/ds-breadcrumbs": "^1.0.3",
+    "@dscla/ds-button": "^1.0.8",
+    "@dscla/ds-card": "^1.0.15",
+    "@dscla/ds-data-table": "^1.0.4",
+    "@dscla/ds-footer": "^1.0.4",
+    "@dscla/ds-header": "^1.0.1",
+    "@dscla/ds-input": "^1.0.3",
+    "@dscla/ds-item-detail": "^1.0.5",
+    "@dscla/ds-modal": "^1.0.3",
+    "@dscla/ds-pagination": "^1.0.1",
+    "@dscla/ds-select": "^1.0.2",
+    "@dscla/ds-tokens": "^1.0.2"
+  },
+  "packageManager": "npm@8.19.3"
+}
