@@ -10,7 +10,7 @@ aplicaciones:
 
 ### Aplicaciones
 
-- `angular-ds`: Una aplicación [Angular](https://angular.io/). Ir al [README](apps/angular-ds/README.md) para mayor información.
+- `angular-ds-js`: Una aplicación [Angular](https://angular.io/). Ir al [README](apps/angular-ds-js/README.md) para mayor información.
 - `vanilla-js-ds`: Una aplicación con Vanilla JS. Ir al [README](apps/vue-js-ds/README.md) para mayor información
 - `vuejs-ds`: Una aplicación [VueJS](https://vuejs.org/). Ir al [README](apps/vanilla-js-ds/README.md) para mayor información
 
