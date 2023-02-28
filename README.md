@@ -1,73 +1,25 @@
-# Turborepo starter
+# Ejemplos de uso del DS con distintos frameworks
 
-This is an official npm starter turborepo.
+En este proyecto se agrupan distintos proyectos que sirven a manera de documentación de uso
+del DS. Se usa la tecnología de monorepositorio [turborepo](https://turbo.build/repo).
 
-## What's inside?
+## ¿Qué se incluye?
 
-This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It includes the following packages/apps:
+Este monorepo usa [npm](https://www.npmjs.com/) como gestor de paquetes. Se incluyen las siguientes
+aplicaciones:
 
-### Apps and Packages
+### Aplicaciones
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+- `angular-ds`: Una aplicación [Angular](https://angular.io/). Ir al [README](apps/angular-ds/README.md) para mayor información.
+- `vanilla-js-ds`: Una aplicación con Vanilla JS. Ir al [README](apps/vue-js-ds/README.md) para mayor información
+- `vuejs-ds`: Una aplicación [VueJS](https://vuejs.org/). Ir al [README](apps/vanilla-js-ds/README.md) para mayor información
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+### Desarrollo
 
-### Utilities
-
-This turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
+Para ejecutar el servidor de desarrollo de todas las aplicaciones se debe ejecutar
+el siguiente comando:
 
 ```
-cd my-turborepo
-npm run build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
+cd ds-frameworks
 npm run dev
 ```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
