@@ -7,7 +7,9 @@ Para la instalación de paquetes del sistema de diseño primero debemos confirma
 Para realizar la descarga de esa publicación debemos modificar el destino del cual queremos descargar el paquete, en modo administrador debemos ejecutar los siguientes comandos dentro del proyecto (o repositorio) que queremos que tenga los componentes DS.
 
 **echo //gitlab.com/api/v4/projects/35007653/packages/npm/:_authToken=$TOKEN > .npmrc**
+
 **npm config set @dscla:registry https://gitlab.com/api/v4/projects/35007653/packages/npm/**
+
 **npm config set -- '//gitlab.com/api/v4/projects/35007653/packages/npm/:_authToken' "$TOKEN"**
 
 Donde la URL `gitlab.com/api/v4/projects/35007653/packages/npm/` hace referencia al proyecto mencionado en el inicio de este documento (donde están publicado los paquetes)
