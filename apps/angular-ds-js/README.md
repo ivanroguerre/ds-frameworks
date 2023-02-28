@@ -34,3 +34,19 @@ Una vez instalado los paquetes necesarios hay que agregar el el `SCHEMA` en el `
     
 Ya  tenemos a disposición el DS siempre y cuando importemos en nuestro `TypeScript` el componente a utilizar.
     **import "@dscla/ds-card";**
+
+# Para versiones de angular 14 o mayores:
+
+Dado a que las versiones de angular presentan errores al cargar estilos ccs en conjunto a scss. Hemos implementado la siguiente solución.
+
+instalación de :
+
+**npm install @angular-builders/custom-webpack --save-dev**
+
+Esto permite insertar configuraciones de webpack dentro de las de angular.
+
+Añadir el loader correspondiente a loader de css (o en que necesites)
+
+`npm i css-loader style-loader -–save-dev`
+
+implementar el custom webpack en el angular.json
